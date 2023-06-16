@@ -14,11 +14,11 @@ function Hero() {
         </h3>
 
         <p className="text-base mb-20 ">
-        I am a D4 Informatics Engineering student of Harapan Bersama Polytechnic.
+        I am a D4 Informatics Engineering student of Harapan Bersama Polytechnic Tegal.
         </p>
 
         <a
-          href="#"
+          href="https://drive.google.com/file/d/1LsvD5J2LH6KL-8qoqSmJgpZzw9ScOrF9/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="font-fira px-6 py-4 rounded border border-primary text-primary hover:bg-primary hover:bg-opacity-10 hover:shadow hover:shadow-teal-500
