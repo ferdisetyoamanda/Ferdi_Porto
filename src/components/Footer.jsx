@@ -1,8 +1,11 @@
 import React from "react";
 import { socials } from "../utils/config";
 import { Icon } from "./icons/Icon";
+import { useLanguage } from "../Context/LanguageContext"; // Pastikan path ini sesuai dengan struktur direktori Anda
 
 const Footer = () => {
+  const { language } = useLanguage();
+
   return (
     <div className="pt-32 pb-7">
       <div className="container px-6 md:px-12 lg:px-40">
@@ -18,8 +21,12 @@ const Footer = () => {
           </ul>
         </div>
         <div className="max-w-xs mx-auto">
-          <p className="text-center text-sm font-fira">
-            Built with Ferdi Setyo Amanda &copy;2023
+          <p className="text-center text-black text-sm">
+
+            {language === "id"
+              ? "Dibuat dengan ❤️ oleh Ferdi Setyo Amanda"
+              : "Made with ❤️ by Ferdi Setyo Amanda"}
+            &copy;{new Date().getFullYear()}
           </p>
         </div>
       </div>
